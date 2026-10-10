@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aminul Islam | Software Developer</title>
+<meta name="description" content="Aminul Islam, Software Developer in Dhaka, Bangladesh. React.js and ASP.NET Core Web API, ERP systems and automation tools.">
+<meta property="og:title" content="Aminul Islam | Software Developer">
+<meta property="og:description" content="I work on ERP software that runs in production. React.js, ASP.NET Core Web API, Electron.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#070b14">
+<meta name="author" content="Aminul Islam">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Aminul Islam","jobTitle":"Software Developer","worksFor":{"@type":"Organization","name":"Global Mediklaud (BD) Ltd."},"address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"email":"mailto:mdaminulislam2424@gmail.com?subject=Opportunity%20for%20Aminul%20Islam","sameAs":["https://www.linkedin.com/in/aminulislam-rb/","https://github.com/RD-Aminul"],"knowsAbout":["React.js","ASP.NET Core Web API","C#","JavaScript","REST APIs","ERP systems","Electron"]}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2360a5fa'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230d1117'/%3E%3Ctext x='32' y='43' font-family='Consolas,monospace' font-size='30' font-weight='700' text-anchor='middle' fill='url(%23g)'%3E%26lt;/%26gt;%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #070b14; --bg2: #0b111d; --card: rgba(22,28,41,0.72); --card-solid: #131a28;
+    --line: rgba(255,255,255,0.10); --text: #eaf0fa; --muted: #93a0b4;
+    --blue: #60a5fa; --violet: #a78bfa; --teal: #2dd4bf; --pink: #f472b6; --amber: #fbbf24;
+    --grad: linear-gradient(90deg, #60a5fa 0%, #a78bfa 55%, #2dd4bf 100%);
+    --max: 1120px;
+    --mono: Consolas, "Cascadia Code", "SF Mono", Menlo, monospace;
+    --sans: "Segoe UI Variable Display", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  :root[data-theme="light"] {
+    --bg: #f5f7fb; --bg2: #ecf0f7; --card: rgba(255,255,255,0.82); --card-solid: #ffffff;
+    --line: rgba(15,23,42,0.12); --text: #0f172a; --muted: #55627a;
+    --blue: #2563eb; --violet: #7c3aed; --teal: #0d9488; --pink: #db2777; --amber: #d97706;
+    --grad: linear-gradient(90deg, #2563eb 0%, #7c3aed 55%, #0d9488 100%);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: var(--blue); text-decoration: none; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; position: relative; }
+  :focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 8px; }
+  .g { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  #progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--grad); z-index: 50; }
+
+  /* nav */
+  header { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 70%, transparent); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { font-family: var(--mono); font-weight: 700; color: var(--text); font-size: 17px; }
+  .brand b { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  nav ul { display: flex; gap: 6px; list-style: none; align-items: center; }
+  nav a.l { color: var(--muted); font-size: 14.5px; font-weight: 600; padding: 7px 13px; border-radius: 999px; }
+  nav a.l:hover { color: var(--text); background: color-mix(in srgb, var(--text) 8%, transparent); }
+  .theme { background: var(--card); border: 1px solid var(--line); color: var(--text); width: 38px; height: 38px; border-radius: 12px; cursor: pointer; font-size: 16px; margin-left: 8px; }
+  .theme:hover { border-color: var(--violet); }
+
+  /* hero */
+  .hero { position: relative; overflow: hidden; padding: 96px 0 84px; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .55; pointer-events: none; animation: drift 14s ease-in-out infinite alternate; }
+  .b1 { width: 520px; height: 520px; left: -140px; top: -160px; background: #3b82f6; }
+  .b2 { width: 460px; height: 460px; right: -120px; top: 20px; background: #8b5cf6; animation-delay: -5s; }
+  .b3 { width: 380px; height: 380px; left: 38%; bottom: -220px; background: #14b8a6; animation-delay: -9s; opacity: .4; }
+  :root[data-theme="light"] .blob { opacity: .28; }
+  @keyframes drift { to { transform: translate(40px, 30px) scale(1.12); } }
+  .gridbg { position: absolute; inset: 0; pointer-events: none;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000 10%, transparent 70%); mask-image: radial-gradient(ellipse at 50% 30%, #000 10%, transparent 70%); opacity: .55; }
+
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 52px; align-items: center; position: relative; }
+  .pill { display: inline-flex; align-items: center; gap: 9px; font-family: var(--mono); font-size: 13.5px; color: var(--muted); border: 1px solid var(--line); background: var(--card); padding: 6px 14px; border-radius: 999px; margin-bottom: 22px; backdrop-filter: blur(8px); }
+  .pill i { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 0 0 rgba(45,212,191,.6); animation: pulse 2s infinite; display: block; }
+  @keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(45,212,191,0); } 100% { box-shadow: 0 0 0 0 rgba(45,212,191,0); } }
+  h1 { font-size: clamp(38px, 6vw, 68px); line-height: 1.02; letter-spacing: -2.2px; font-weight: 900; }
+  .type { font-size: clamp(18px, 2.2vw, 23px); margin-top: 22px; color: var(--muted); min-height: 1.7em; }
+  .type b { color: var(--text); font-weight: 700; }
+  .caret { display: inline-block; width: 2px; height: 1.1em; background: var(--teal); margin-left: 3px; vertical-align: -3px; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .lead { color: var(--muted); font-size: 17.5px; margin: 18px 0 32px; max-width: 540px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 12px; font-weight: 700; font-size: 15px; border: 1px solid var(--line); background: var(--card); color: var(--text); backdrop-filter: blur(8px); transition: transform .2s, border-color .2s, box-shadow .2s; }
+  .btn:hover { transform: translateY(-2px); border-color: var(--violet); box-shadow: 0 10px 30px -10px rgba(139,92,246,.6); }
+  .btn.primary { border: 0; background: var(--grad); color: #07101f; box-shadow: 0 10px 30px -10px rgba(96,165,250,.7); }
+  :root[data-theme="light"] .btn.primary { color: #fff; }
+  .btn.primary:hover { box-shadow: 0 14px 38px -8px rgba(139,92,246,.8); }
+
+  .win { position: relative; background: var(--card-solid); border-radius: 16px; overflow: hidden; box-shadow: 0 30px 80px -20px rgba(0,0,0,.6); animation: floaty 6s ease-in-out infinite alternate; }
+  .win::before { content: ""; position: absolute; inset: 0; border-radius: 16px; padding: 1.5px; background: var(--grad); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
+  @keyframes floaty { to { transform: translateY(-10px) rotate(-.4deg); } }
+  .win .bar { height: 42px; background: color-mix(in srgb, var(--text) 5%, transparent); border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 8px; padding: 0 16px; }
+  .win .bar i { width: 12px; height: 12px; border-radius: 50%; display: block; }
+  .win .bar span { margin-left: 10px; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+  .win pre { font-family: var(--mono); font-size: 15.5px; line-height: 1.75; padding: 20px 24px; overflow-x: auto; }
+  .k { color: var(--pink); } .s { color: var(--teal); } .n { color: var(--blue); } .c { color: var(--muted); }
+
+  .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 64px; position: relative; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px 22px 20px; backdrop-filter: blur(8px); position: relative; overflow: hidden; }
+  .stat::after { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--grad); opacity: .85; }
+  .stat b { display: block; font-size: clamp(34px, 4.2vw, 48px); font-weight: 900; letter-spacing: -1.5px; line-height: 1.1; }
+  .stat span { color: var(--muted); font-size: 12.5px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
+
+  /* marquee */
+  .marquee { border-block: 1px solid var(--line); background: color-mix(in srgb, var(--bg2) 80%, transparent); overflow: hidden; padding: 16px 0; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+  .track { display: flex; gap: 14px; width: max-content; animation: scroll 38s linear infinite; }
+  .marquee:hover .track { animation-play-state: paused; }
+  .track span { font-family: var(--mono); font-size: 15px; color: var(--muted); border: 1px solid var(--line); background: var(--card); padding: 7px 18px; border-radius: 999px; white-space: nowrap; }
+  .track span:nth-child(4n+1) { color: var(--blue); } .track span:nth-child(4n+2) { color: var(--violet); } .track span:nth-child(4n+3) { color: var(--teal); } .track span:nth-child(4n) { color: var(--pink); }
+  @keyframes scroll { to { transform: translateX(-50%); } }
+
+  /* sections */
+  section { padding: 92px 0; }
+  .label { font-family: var(--mono); font-size: 14px; margin-bottom: 12px; display: inline-flex; align-items: center; gap: 10px; color: var(--teal); }
+  .label::after { content: ""; width: 56px; height: 2px; background: var(--grad); border-radius: 2px; }
+  h2 { font-size: clamp(30px, 4.4vw, 46px); letter-spacing: -1.4px; line-height: 1.08; margin-bottom: 16px; font-weight: 900; }
+  .sub { color: var(--muted); max-width: 620px; margin-bottom: 40px; font-size: 17.5px; }
+
+  .about { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 48px; }
+  .about p { color: var(--muted); font-size: 17.5px; margin-bottom: 16px; }
+  .about p strong { color: var(--text); font-weight: 700; }
+  .facts { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 10px 24px; list-style: none; backdrop-filter: blur(8px); align-self: start; }
+  .facts li { display: flex; justify-content: space-between; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+  .facts li:last-child { border-bottom: 0; }
+  .facts li span:first-child { color: var(--muted); }
+  .facts li span:last-child { text-align: right; font-weight: 700; }
+
+  .skills { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px; }
+  .skill { grid-column: span 2; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; backdrop-filter: blur(8px); position: relative; overflow: hidden; }
+  .skill.w3 { grid-column: span 3; } .skill.w6 { grid-column: span 6; }
+  .skill h3 { font-size: 17px; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .skill h3::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--c, var(--blue)); box-shadow: 0 0 14px var(--c, var(--blue)); }
+  .skill h3 small { color: var(--muted); font-weight: 500; font-size: 13px; margin-left: auto; text-align: right; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { font-family: var(--mono); font-size: 13.5px; color: var(--c, var(--blue)); background: color-mix(in srgb, var(--c, var(--blue)) 12%, transparent); border: 1px solid color-mix(in srgb, var(--c, var(--blue)) 38%, transparent); padding: 5px 12px; border-radius: 9px; transition: transform .15s; }
+  .chip:hover { transform: translateY(-2px); }
+
+  .spot::before { content: ""; position: absolute; inset: 0; background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 0%), color-mix(in srgb, var(--violet) 22%, transparent), transparent 55%); opacity: 0; transition: opacity .3s; pointer-events: none; }
+  .spot:hover::before { opacity: 1; }
+  .spot:hover { border-color: color-mix(in srgb, var(--violet) 55%, var(--line)); }
+
+  .projects { display: grid; gap: 20px; }
+  .proj { position: relative; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 34px 34px 30px; backdrop-filter: blur(8px); }
+  .proj .no { position: absolute; right: 24px; top: 6px; font-size: 120px; font-weight: 900; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px color-mix(in srgb, var(--text) 14%, transparent); letter-spacing: -6px; pointer-events: none; }
+  .proj-top { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-bottom: 10px; position: relative; }
+  .proj h3 { font-size: clamp(22px, 2.6vw, 28px); letter-spacing: -.6px; font-weight: 800; }
+  .tag { font-family: var(--mono); font-size: 12.5px; color: var(--amber); border: 1px solid color-mix(in srgb, var(--amber) 45%, transparent); background: color-mix(in srgb, var(--amber) 10%, transparent); padding: 3px 12px; border-radius: 999px; white-space: nowrap; }
+  .proj p.d { color: var(--muted); margin: 8px 0 16px; font-size: 17px; max-width: 760px; position: relative; }
+  .proj ul { margin: 0 0 20px 20px; color: var(--muted); font-size: 15.5px; max-width: 800px; position: relative; }
+  .proj li { margin-bottom: 7px; }
+  .proj li::marker { color: var(--teal); }
+  .proj li strong { color: var(--text); }
+  .proj .chips { margin-bottom: 18px; position: relative; }
+  .proj a.link { font-weight: 800; font-size: 15px; position: relative; display: inline-flex; gap: 8px; align-items: center; }
+  .proj a.link:hover { gap: 12px; }
+
+  .timeline { position: relative; margin-left: 10px; padding-left: 34px; display: grid; gap: 22px; }
+  .timeline::before { content: ""; position: absolute; left: 0; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(var(--blue), var(--violet), var(--teal)); border-radius: 2px; }
+  .job { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px 26px; backdrop-filter: blur(8px); }
+  .job::before { content: ""; position: absolute; left: -43px; top: 28px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 3px solid var(--violet); box-shadow: 0 0 16px var(--violet); }
+  .job h3 { font-size: 20px; font-weight: 800; }
+  .job .meta { color: var(--teal); font-family: var(--mono); font-size: 13.5px; margin: 3px 0 12px; }
+  .job ul { margin-left: 20px; color: var(--muted); font-size: 15.5px; }
+  .job li { margin-bottom: 6px; }
+  .job li::marker { color: var(--teal); }
+  .edu { margin-top: 40px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .edu .box { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; backdrop-filter: blur(8px); }
+  .edu h4 { font-size: 15.5px; margin-bottom: 4px; }
+  .edu p { color: var(--muted); font-size: 14.5px; }
+
+  .cta { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 28px; padding: 72px 28px; text-align: center; background: var(--card); backdrop-filter: blur(8px); }
+  .cta .blob { opacity: .35; filter: blur(80px); }
+  .cta .c1 { width: 380px; height: 380px; left: -100px; top: -140px; background: #3b82f6; }
+  .cta .c2 { width: 380px; height: 380px; right: -100px; bottom: -160px; background: #8b5cf6; animation-delay: -6s; }
+  .cta > *:not(.blob) { position: relative; }
+  .cta .label { justify-content: center; }
+  .cta .sub { margin-left: auto; margin-right: auto; }
+  .cta .btns { justify-content: center; }
+  .mail { display: inline-block; font-size: clamp(20px, 3.4vw, 34px); font-weight: 900; letter-spacing: -.8px; margin-bottom: 30px; word-break: break-all; }
+
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--card-solid); color: var(--text); padding: 8px 14px; border-radius: 8px; z-index: 60; }
+  .skip:focus { left: 8px; }
+  nav a.r { margin-left: 6px; padding: 8px 16px; border-radius: 999px; font-weight: 800; font-size: 14px; background: var(--grad); color: #07101f; }
+  :root[data-theme="light"] nav a.r { color: #fff; }
+  nav a.r:hover { filter: brightness(1.08); }
+  .fit { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; }
+  .fit .t { font-family: var(--mono); font-size: 13.5px; color: var(--muted); margin-right: 4px; }
+  .fit span.p { font-size: 14.5px; font-weight: 700; padding: 7px 15px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); backdrop-filter: blur(8px); }
+  details.more { margin: 0 0 18px; position: relative; }
+  details.more summary { cursor: pointer; font-weight: 800; font-size: 14.5px; color: var(--blue); list-style: none; display: inline-flex; align-items: center; gap: 8px; padding: 6px 0; }
+  details.more summary::-webkit-details-marker { display: none; }
+  details.more summary::after { content: "+"; display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--line); font-size: 15px; }
+  details.more[open] summary::after { content: "\2212"; }
+  details.more ul { margin-top: 12px; }
+  footer { border-top: 1px solid var(--line); padding: 30px 0; color: var(--muted); font-size: 14px; text-align: center; font-family: var(--mono); }
+
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .blob, .win, .track, .pill i, .caret { animation: none !important; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+
+  @media (max-width: 920px) {
+    .hero-grid, .about { grid-template-columns: minmax(0, 1fr); }
+    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .skill, .skill.w3 { grid-column: span 6; }
+    .edu { grid-template-columns: minmax(0, 1fr); }
+    nav a.l { display: none; }
+    section { padding: 68px 0; }
+    .proj .no { font-size: 84px; }
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 0 18px; }
+    .hero { padding: 56px 0 54px; }
+    .win pre { font-size: 13.5px; padding: 14px 16px; }
+    .proj { padding: 26px 22px; }
+    .timeline { padding-left: 26px; margin-left: 6px; }
+    .job::before { left: -35px; }
+    .cta { padding: 52px 20px; border-radius: 22px; }
+  }
+  @media print {
+    header, .blob, .gridbg, .marquee, #progress, .theme, .caret, .win { display: none !important; }
+    :root, :root[data-theme="light"] { --bg: #fff; --card: #fff; --card-solid: #fff; --line: #ccc; --text: #111; --muted: #333; --blue: #0b57d0; --violet: #5b21b6; --teal: #0f766e; }
+    body { background: #fff; color: #111; }
+    .reveal { opacity: 1 !important; transform: none !important; }
+    .g { background: none; -webkit-text-fill-color: #111; color: #111; }
+    section { padding: 24px 0; break-inside: avoid-page; }
+    .proj, .job, .skill, .stat { backdrop-filter: none; break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<div id="progress"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">aminul<b>.dev</b></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a class="l" href="#about">About</a></li>
+        <li><a class="l" href="#skills">Skills</a></li>
+        <li><a class="l" href="#projects">Projects</a></li>
+        <li><a class="l" href="#experience">Experience</a></li>
+        <li><a class="l" href="#contact">Contact</a></li>
+        <li><a class="r" href="Aminul-Islam-Resume.pdf" download>Resume</a></li>
+        <li><button class="theme" id="theme" aria-label="Toggle light and dark theme">&#9680;</button></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="gridbg"></div>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="pill"><i></i> Software Developer &middot; Dhaka, Bangladesh</div>
+          <h1>I work on <span class="g">ERP software</span> that runs in production.</h1>
+          <p class="type">Building <b id="tw">forms &amp; reports</b><span class="caret" aria-hidden="true"></span></p>
+          <p class="lead">3+ years with React.js and ASP.NET Core Web API, shipping features and tools for 20+ production client systems.</p>
+          <div class="btns">
+            <a class="btn primary" href="#projects">View projects &rarr;</a>
+            <a class="btn" href="Aminul-Islam-Resume.pdf" download>Download resume</a>
+            <a class="btn" href="https://www.linkedin.com/in/aminulislam-rb/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="win" aria-hidden="true">
+          <div class="bar"><i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i><span>aminul.js</span></div>
+<pre><span class="k">const</span> <span class="n">aminul</span> = {
+  role: <span class="s">'Software Developer'</span>,
+  stack: [<span class="s">'React.js'</span>,
+          <span class="s">'ASP.NET Core Web API'</span>,
+          <span class="s">'C#'</span>],
+  focus: <span class="s">'ERP &amp; automation'</span>,
+  experience: <span class="s">'3+ years'</span>,
+  location: <span class="s">'Dhaka, Bangladesh'</span>,
+};</pre>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b class="g" data-count="3">3+</b><span>Years experience</span></div>
+        <div class="stat"><b class="g" data-count="20">20+</b><span>ERP modules</span></div>
+        <div class="stat"><b class="g" data-count="200">200+</b><span>Forms &amp; reports</span></div>
+        <div class="stat"><b class="g" data-count="20">20+</b><span>Client systems</span></div>
+      </div>
+      <div class="fit"><span class="t">// best fit</span><span class="p">Full-stack (React + ASP.NET Core)</span><span class="p">ERP &amp; enterprise web apps</span><span class="p">Internal tools &amp; automation</span></div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track" id="track">
+      <span>React.js</span><span>ASP.NET Core Web API</span><span>C#</span><span>JavaScript</span><span>REST APIs</span><span>Electron</span><span>Capacitor</span><span>IIS</span><span>Git</span><span>Telerik Reports</span><span>MS SQL Server</span><span>PostgreSQL</span><span>Oracle</span>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap about reveal">
+      <div>
+        <div class="label">// about</div>
+        <h2>Turning business requirements into <span class="g">reliable software</span></h2>
+        <p>I am a Software Developer at <strong>Global Mediklaud (BD) Ltd.</strong>, where I contribute to 20+ ERP modules with <strong>React.js</strong> and <strong>ASP.NET Core Web API</strong>, and deploy ERP releases to 15+ client production environments.</p>
+        <p>I also <strong>independently built</strong> the frontend, Android app and backend API of a visitor appointment platform, from requirements to deployment, and created an Electron tool that automates build and packaging for 20+ client systems.</p>
+        <p>I have working knowledge of MS SQL Server, PostgreSQL and Oracle, and I use AI tools to move faster while keeping the code readable and maintainable.</p>
+      </div>
+      <ul class="facts">
+        <li><span>Role</span><span>Software Developer</span></li>
+        <li><span>Company</span><span>Global Mediklaud (BD) Ltd.</span></li>
+        <li><span>Location</span><span>Dhaka, Bangladesh</span></li>
+        <li><span>Main stack</span><span>React.js, ASP.NET Core</span></li>
+        <li><span>Languages</span><span>Bengali, English</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" style="padding-top:0">
+    <div class="wrap reveal">
+      <div class="label">// skills</div>
+      <h2>What I <span class="g">work with</span></h2>
+      <p class="sub">Tools I use day to day on ERP and automation projects.</p>
+      <div class="skills">
+        <div class="skill w3 spot" style="--c:var(--blue)"><h3>Frontend</h3><div class="chips"><span class="chip">React.js</span><span class="chip">JavaScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Bootstrap</span></div></div>
+        <div class="skill w3 spot" style="--c:var(--violet)"><h3>Backend</h3><div class="chips"><span class="chip">ASP.NET Core Web API</span><span class="chip">C#</span><span class="chip">ASP.NET MVC</span><span class="chip">ASP.NET Web Forms</span><span class="chip">REST APIs</span><span class="chip">Payment gateway integration</span></div></div>
+        <div class="skill spot" style="--c:var(--teal)"><h3>Database <small>queries &amp; schema changes</small></h3><div class="chips"><span class="chip">MS SQL Server</span><span class="chip">PostgreSQL</span><span class="chip">Oracle</span></div></div>
+        <div class="skill spot" style="--c:var(--pink)"><h3>Reports</h3><div class="chips"><span class="chip">HTML reports</span><span class="chip">Telerik Reports</span><span class="chip">Crystal Reports</span></div></div>
+        <div class="skill spot" style="--c:var(--amber)"><h3>Desktop &amp; mobile</h3><div class="chips"><span class="chip">Electron</span><span class="chip">React + Capacitor (Android)</span></div></div>
+        <div class="skill w6 spot" style="--c:var(--blue)"><h3>Tools</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">IIS</span><span class="chip">Visual Studio</span><span class="chip">VS Code</span><span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">GitHub Copilot</span><span class="chip">Antigravity</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" style="padding-top:0">
+    <div class="wrap reveal">
+      <div class="label">// projects</div>
+      <h2>Selected <span class="g">work</span></h2>
+      <p class="sub">A personal tool and two office projects. Company and client details are left out.</p>
+      <div class="projects">
+
+        <article class="proj spot">
+          <div class="no">01</div>
+          <div class="proj-top"><h3>Mediklaud Deployment Tool</h3><span class="tag">Personal project</span></div>
+          <p class="d">Electron desktop application that automates build and packaging for 20+ client systems, replacing manual build and zip steps with a single tool.</p>
+          <details class="more"><summary>Key details</summary><ul>
+            <li>Automates the release pipeline: git pull, React build, dotnet publish and IIS site/app-pool handling, packaging output into versioned, timestamped zip artifacts with live progress.</li>
+            <li>Builds and zips any client project without opening it in an IDE, with automatic detection of project folders and their current Git branch.</li>
+            <li>Manages multi-environment configuration by switching client-specific database connections and API URLs before a build and restoring the original files afterward.</li>
+          </ul></details>
+          <div class="chips" style="--c:var(--blue)"><span class="chip">Electron</span><span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">IIS</span><span class="chip">Git</span></div>
+          <a class="link" href="https://github.com/RD-Aminul/MediklaudDeployTool" target="_blank" rel="noopener">View on GitHub <span>&rarr;</span></a>
+        </article>
+
+        <article class="proj spot">
+          <div class="no">02</div>
+          <div class="proj-top"><h3>Appointment &amp; Visitor Management System</h3><span class="tag">Office project</span></div>
+          <p class="d">Visitor appointment platform with a public portal and an internal admin portal, both backed by one ASP.NET Core Web API with layered architecture. I independently developed the frontend, Android app and backend API.</p>
+          <details class="more"><summary>Key details</summary><ul>
+            <li><strong>Public portal (React + Capacitor, Android):</strong> 4-step booking flow with OTP-verified mobile registration and token-based access, slot and booth selection, online payment gateway integration and appointment slip.</li>
+            <li><strong>Admin portal:</strong> dashboard with appointment and occupancy statistics, check-in/check-out, reports, data sync from client databases, and role-based menu, report and location permissions.</li>
+            <li>Bilingual (English &amp; Bangla) support in the visitor app.</li>
+          </ul></details>
+          <div class="chips" style="--c:var(--violet)"><span class="chip">React.js</span><span class="chip">ASP.NET Core Web API</span><span class="chip">C#</span><span class="chip">Capacitor</span></div>
+        </article>
+
+        <article class="proj spot">
+          <div class="no">03</div>
+          <div class="proj-top"><h3>ERP System Modules</h3><span class="tag">Office project</span></div>
+          <p class="d">Contributed 200+ forms and reports across 20+ modules of an ERP platform deployed to 20+ production clients, from ASP.NET Web Forms and Telerik Reports to React.js and ASP.NET Core Web API.</p>
+          <details class="more"><summary>Key details</summary><ul>
+            <li>CRUD operations, data-entry forms and reporting features, from UI to API.</li>
+            <li>Contributed to migrating the ERP from Web Forms to React.js and ASP.NET Core Web API (from 2024).</li>
+            <li>Built reusable React components, including a modal, used by the development team.</li>
+          </ul></details>
+          <div class="chips" style="--c:var(--teal)"><span class="chip">React.js</span><span class="chip">ASP.NET Core Web API</span><span class="chip">ASP.NET Web Forms</span><span class="chip">Telerik Reports</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" style="padding-top:0">
+    <div class="wrap reveal">
+      <div class="label">// experience</div>
+      <h2>Where I have <span class="g">worked</span></h2>
+      <p class="sub">&nbsp;</p>
+      <div class="timeline">
+        <div class="job">
+          <h3>Software Developer</h3>
+          <div class="meta">Global Mediklaud (BD) Ltd. &middot; Jul 2025 &ndash; Present</div>
+          <ul>
+            <li>Contribute to 20+ ERP modules with React.js and ASP.NET Core Web API, deployed across production client systems.</li>
+            <li>Deploy ERP releases to 15+ client production environments using IIS and an in-house deployment tool.</li>
+            <li>Write and modify SQL queries across 3 database platforms and troubleshoot data-related issues in ERP modules.</li>
+            <li>Built reusable React components (including a modal) used by the development team and implemented form validation on data-entry forms.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Junior Software Developer</h3>
+          <div class="meta">Global Mediklaud (BD) Ltd. &middot; Jan 2023 &ndash; Jun 2025</div>
+          <ul>
+            <li>Built forms and reports for ERP modules using ASP.NET Web Forms, C# and Telerik Reports.</li>
+            <li>Contributed to migrating the ERP from Web Forms and Telerik Reports to React.js, ASP.NET Core Web API and HTML-based reports (from 2024).</li>
+            <li>Promoted to Software Developer in Jul 2025.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Intern</h3>
+          <div class="meta">Azolution Software &amp; Engineers Ltd &middot; May 2022 &ndash; Nov 2022</div>
+          <ul>
+            <li>Maintained and supported 3 HRIS modules (employee management, leave, attendance); modified existing SQL queries and resolved bugs.</li>
+            <li>Resolved issues reported by client users and handled their software support requests.</li>
+            <li>Fixed data-validation bugs in HRIS forms, reducing employee data-entry errors.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="edu">
+        <div class="box"><h4>BBA (Honors), Accounting</h4><p>National University &middot; 2018</p></div>
+        <div class="box"><h4>Enterprise Systems Analysis &amp; Design: C#.NET</h4><p>IsDB-BISEW IT Scholarship Programme &middot; 1100 hours &middot; 2021&ndash;2022</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-top:0">
+    <div class="wrap reveal">
+      <div class="cta">
+        <div class="blob c1"></div><div class="blob c2"></div>
+        <div class="label">// contact</div>
+        <h2>Let&rsquo;s <span class="g">talk</span></h2>
+        <p class="sub">Have a project or an opportunity in mind? Email me or message me on LinkedIn.</p>
+        <a class="mail g" href="mailto:mdaminulislam2424@gmail.com?subject=Opportunity%20for%20Aminul%20Islam">mdaminulislam2424@gmail.com</a>
+        <div class="btns">
+          <a class="btn primary" href="mailto:mdaminulislam2424@gmail.com?subject=Opportunity%20for%20Aminul%20Islam">Send an email</a>
+          <a class="btn" href="https://www.linkedin.com/in/aminulislam-rb/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/RD-Aminul" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="Aminul-Islam-Resume.pdf" download>Resume (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr">2026</span> Aminul Islam &middot; Dhaka, Bangladesh</div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    try { var t = localStorage.getItem('theme'); if (t) root.setAttribute('data-theme', t); } catch (e) {}
+    document.getElementById('theme').addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // marquee: duplicate the strip so the loop is seamless
+    var track = document.getElementById('track');
+    track.innerHTML += track.innerHTML;
+
+    // scroll progress
+    var bar = document.getElementById('progress');
+    function prog() { var h = document.documentElement; var m = h.scrollHeight - h.clientHeight; bar.style.width = (m > 0 ? (h.scrollTop / m) * 100 : 0) + '%'; }
+    window.addEventListener('scroll', prog, { passive: true }); prog();
+
+    // reveal on scroll
+    var els = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.08 });
+      els.forEach(function (el) { io.observe(el); });
+    } else { els.forEach(function (el) { el.classList.add('in'); }); }
+
+    // count-up numbers
+    var counters = document.querySelectorAll('[data-count]');
+    function countUp(el) {
+      var end = parseInt(el.getAttribute('data-count'), 10), start = null, dur = 1300;
+      function step(ts) { if (!start) start = ts; var p = Math.min((ts - start) / dur, 1); var e = 1 - Math.pow(1 - p, 3); el.textContent = Math.round(end * e) + '+'; if (p < 1) requestAnimationFrame(step); }
+      requestAnimationFrame(step);
+    }
+    if (!reduce && 'IntersectionObserver' in window) {
+      var co = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { countUp(e.target); co.unobserve(e.target); } }); }, { threshold: 0.4 });
+      counters.forEach(function (c) { c.textContent = '0+'; co.observe(c); });
+    }
+
+    // typewriter
+    var words = ['forms & reports', 'REST APIs with ASP.NET Core', 'React.js interfaces', 'deployment automation tools'];
+    var tw = document.getElementById('tw'), wi = 0, ci = 0, del = false;
+    function tick() {
+      var w = words[wi];
+      if (!del) { ci++; tw.textContent = w.slice(0, ci); if (ci === w.length) { del = true; return setTimeout(tick, 1600); } }
+      else { ci--; tw.textContent = w.slice(0, ci); if (ci === 0) { del = false; wi = (wi + 1) % words.length; } }
+      setTimeout(tick, del ? 28 : 55);
+    }
+    if (!reduce) { tw.textContent = ''; tick(); }
+
+    window.addEventListener("beforeprint", function () { document.querySelectorAll("details.more").forEach(function (d) { d.open = true; }); });
+
+    // spotlight follows the pointer on cards
+    document.querySelectorAll('.spot').forEach(function (c) {
+      c.addEventListener('pointermove', function (e) { var r = c.getBoundingClientRect(); c.style.setProperty('--mx', (e.clientX - r.left) + 'px'); c.style.setProperty('--my', (e.clientY - r.top) + 'px'); });
+    });
+  })();
+</script>
+</body>
+</html>
