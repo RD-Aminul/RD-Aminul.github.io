@@ -8,10 +8,20 @@
 <meta property="og:title" content="Aminul Islam | Software Developer">
 <meta property="og:description" content="I work on ERP software that runs in production. React.js, ASP.NET Core Web API, Electron.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://rd-aminul.github.io/">
+<meta property="og:image" content="https://rd-aminul.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Aminul Islam, Software Developer. Portfolio at rd-aminul.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aminul Islam | Software Developer">
+<meta name="twitter:description" content="I work on ERP software that runs in production. React.js, ASP.NET Core Web API, Electron.">
+<meta name="twitter:image" content="https://rd-aminul.github.io/og-image.png">
+<link rel="canonical" href="https://rd-aminul.github.io/">
 <meta name="theme-color" content="#070b14">
 <meta name="author" content="Aminul Islam">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Aminul Islam","jobTitle":"Software Developer","worksFor":{"@type":"Organization","name":"Global Mediklaud (BD) Ltd."},"address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"email":"mailto:mdaminulislam2424@gmail.com?subject=Opportunity%20for%20Aminul%20Islam","sameAs":["https://www.linkedin.com/in/aminulislam-rb/","https://github.com/RD-Aminul"],"knowsAbout":["React.js","ASP.NET Core Web API","C#","JavaScript","REST APIs","ERP systems","Electron"]}
+{"@context":"https://schema.org","@type":"Person","name":"Aminul Islam","jobTitle":"Software Developer","worksFor":{"@type":"Organization","name":"Global Mediklaud (BD) Ltd."},"address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"email":"mdaminulislam2424@gmail.com","image":"https://rd-aminul.github.io/photo.jpg","url":"https://rd-aminul.github.io/","sameAs":["https://www.linkedin.com/in/aminulislam-rb/","https://github.com/RD-Aminul"],"knowsAbout":["React.js","ASP.NET Core Web API","C#","JavaScript","REST APIs","ERP systems","Electron"]}
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2360a5fa'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230d1117'/%3E%3Ctext x='32' y='43' font-family='Consolas,monospace' font-size='30' font-weight='700' text-anchor='middle' fill='url(%23g)'%3E%26lt;/%26gt;%3C/text%3E%3C/svg%3E">
 <style>
@@ -224,6 +234,135 @@
     section { padding: 24px 0; break-inside: avoid-page; }
     .proj, .job, .skill, .stat { backdrop-filter: none; break-inside: avoid; }
   }
+
+  /* ===== v2 additions ===== */
+  .hero-visual { position: relative; max-width: 410px; margin-left: auto; width: 100%; padding-bottom: 46px; }
+  .portrait { position: relative; padding: 3px; border-radius: 28px; background: var(--grad); box-shadow: 0 40px 90px -30px rgba(96,165,250,.55), 0 20px 60px -20px rgba(139,92,246,.45); }
+  .portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 14%; border-radius: 25px; background: var(--card-solid); }
+  .portrait .badge { position: absolute; right: -14px; top: 22px; font-family: var(--mono); font-size: 12.5px; padding: 7px 13px; border-radius: 999px; background: var(--card-solid); border: 1px solid var(--line); color: var(--text); box-shadow: 0 10px 30px -10px rgba(0,0,0,.6); }
+  .portrait .badge b { color: var(--teal); }
+  .win.mini { position: absolute; left: -46px; bottom: 0; width: 276px; border-radius: 14px; box-shadow: 0 24px 60px -14px rgba(0,0,0,.75); }
+  .win.mini .bar { height: 34px; padding: 0 12px; gap: 7px; }
+  .win.mini .bar i { width: 10px; height: 10px; }
+  .win.mini .bar span { font-size: 11.5px; margin-left: 6px; }
+  .win.mini pre { font-size: 12px; line-height: 1.6; padding: 12px 16px; overflow: hidden; }
+
+  nav a.l.active { color: var(--text); background: color-mix(in srgb, var(--violet) 22%, transparent); }
+
+  .focus { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .fcard { position: relative; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px 22px 22px; backdrop-filter: blur(8px); }
+  .fcard .ic { width: 46px; height: 46px; border-radius: 13px; display: grid; place-items: center; font-family: var(--mono); font-weight: 800; font-size: 17px; color: #07101f; background: var(--grad); margin-bottom: 16px; }
+  .fcard h3 { font-size: 18px; font-weight: 800; letter-spacing: -.3px; margin-bottom: 8px; }
+  .fcard p { color: var(--muted); font-size: 15px; line-height: 1.55; }
+
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: -12px 0 26px; }
+  .tab { cursor: pointer; font-family: var(--mono); font-size: 13.5px; font-weight: 700; color: var(--muted); background: var(--card); border: 1px solid var(--line); padding: 8px 16px; border-radius: 999px; transition: color .2s, border-color .2s, background .2s; }
+  .tab:hover { color: var(--text); border-color: var(--violet); }
+  .tab[aria-pressed="true"] { color: #07101f; background: var(--grad); border-color: transparent; }
+  :root[data-theme="light"] .tab[aria-pressed="true"] { color: #fff; }
+  .skills.filtered .skill { grid-column: span 3; }
+  .skills.filtered .skill.hide { display: none; }
+
+  dialog#resumeModal { border: 1px solid var(--line); border-radius: 20px; background: var(--card-solid); color: var(--text); padding: 0; width: min(900px, 94vw); height: min(88vh, 940px); margin: auto; box-shadow: 0 40px 120px rgba(0,0,0,.7); overflow: hidden; }
+  dialog#resumeModal::backdrop { background: rgba(3,6,12,.72); backdrop-filter: blur(6px); }
+  .rm-head { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+  .rm-head strong { font-size: 15.5px; margin-right: auto; }
+  .rm-head a, .rm-head button { font: inherit; font-size: 14px; font-weight: 700; color: var(--text); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 7px 14px; cursor: pointer; }
+  .rm-head a.p { border: 0; background: var(--grad); color: #07101f; }
+  .rm-head a:hover, .rm-head button:hover { border-color: var(--violet); }
+  dialog#resumeModal iframe { width: 100%; height: calc(100% - 62px); border: 0; background: #fff; display: block; }
+
+  #totop { position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; border-radius: 14px; border: 1px solid var(--line); background: var(--card-solid); color: var(--text); font-size: 20px; cursor: pointer; z-index: 30; opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .25s, transform .25s, border-color .2s; box-shadow: 0 14px 34px -12px rgba(0,0,0,.7); }
+  #totop.show { opacity: 1; transform: none; pointer-events: auto; }
+  #totop:hover { border-color: var(--violet); }
+
+  @media (max-width: 1060px) { .focus { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 920px) {
+    .hero-visual { margin: 6px auto 0; max-width: 360px; }
+    .skills.filtered .skill { grid-column: span 6; }
+  }
+  @media (max-width: 700px) {
+    .win.mini { display: none; }
+    .hero-visual { padding-bottom: 0; max-width: 320px; }
+    .portrait .badge { right: -6px; }
+  }
+  @media (max-width: 520px) { .focus { grid-template-columns: minmax(0, 1fr); } }
+  @media print { #totop, dialog#resumeModal, .tabs, .portrait .badge { display: none !important; } .skills.filtered .skill.hide { display: block !important; } }
+
+  /* ===== v3 additions ===== */
+  .hi { font-size: clamp(22px, 3vw, 30px); font-weight: 800; letter-spacing: -.6px; margin-bottom: 8px; }
+  .info { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 6px 0; font-family: var(--mono); font-size: 13.5px; color: var(--muted); }
+  .info > * { padding: 0 14px; border-left: 1px solid var(--line); }
+  .info > *:first-child { padding-left: 0; border-left: 0; }
+  .info a { color: var(--muted); }
+  .info a:hover { color: var(--text); text-decoration: underline; }
+
+  .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 6px; margin: 4px 0 20px; position: relative; }
+  .flow .s { font-family: var(--mono); font-size: 13px; font-weight: 700; padding: 7px 13px; border-radius: 10px; border: 1px solid var(--line); background: color-mix(in srgb, var(--text) 5%, transparent); color: var(--text); }
+  .flow .s:first-child { border-color: color-mix(in srgb, var(--blue) 55%, transparent); color: var(--blue); }
+  .flow .s:last-child { border-color: color-mix(in srgb, var(--teal) 55%, transparent); color: var(--teal); }
+  .flow i { font-style: normal; color: var(--violet); font-size: 15px; }
+
+  nav a.x { color: var(--muted); font-size: 14.5px; font-weight: 600; padding: 7px 13px; border-radius: 999px; }
+  nav a.x:hover { color: var(--text); background: color-mix(in srgb, var(--text) 8%, transparent); }
+  nav a.ghost { margin-left: 4px; padding: 7px 15px; border-radius: 999px; font-size: 14px; font-weight: 700; color: var(--text); border: 1px solid var(--line); background: var(--card); }
+  nav a.ghost:hover { border-color: var(--violet); }
+
+  .socials { display: flex; gap: 12px; justify-content: center; margin-top: 26px; }
+  .socials a { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; border: 1px solid var(--line); background: var(--card); color: var(--text); transition: transform .2s, border-color .2s; }
+  .socials a:hover { transform: translateY(-3px); border-color: var(--violet); }
+  .socials svg { width: 20px; height: 20px; fill: currentColor; }
+  .socials.sm { margin-top: 14px; }
+  .socials.sm a { width: 38px; height: 38px; border-radius: 11px; }
+  .socials.sm svg { width: 17px; height: 17px; }
+  .loc { font-family: var(--mono); font-size: 14px; color: var(--muted); margin-top: 18px; }
+  @media (max-width: 920px) { nav a.x, nav a.ghost { display: none; } }
+  @media print { .socials, nav { display: none !important; } }
+
+  /* ===== v4 contact form ===== */
+  .crow { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px; margin: 4px 0 34px; font-family: var(--mono); font-size: 14.5px; }
+  .crow a, .crow span { display: inline-flex; align-items: center; gap: 9px; color: var(--muted); }
+  .crow a:hover { color: var(--text); text-decoration: underline; }
+  .crow svg { width: 18px; height: 18px; fill: var(--teal); flex: none; }
+  .cform { max-width: 760px; margin: 0 auto; text-align: left; display: grid; gap: 16px; }
+  .cform .two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .cform label { display: block; }
+  .cform .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .cform input, .cform textarea { width: 100%; font: inherit; font-size: 16px; color: var(--text); background: color-mix(in srgb, var(--text) 5%, transparent); border: 1px solid var(--line); border-radius: 14px; padding: 15px 18px; transition: border-color .2s, box-shadow .2s; }
+  .cform textarea { min-height: 150px; resize: vertical; }
+  .cform input::placeholder, .cform textarea::placeholder { color: var(--muted); opacity: .8; }
+  .cform input:focus, .cform textarea:focus { outline: 0; border-color: var(--violet); box-shadow: 0 0 0 3px color-mix(in srgb, var(--violet) 25%, transparent); }
+  .cform button[type="submit"] { cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 100%; font: inherit; font-weight: 800; font-size: 16px; padding: 15px 22px; border: 0; border-radius: 14px; background: var(--grad); color: #07101f; box-shadow: 0 12px 34px -12px rgba(96,165,250,.7); transition: transform .2s, filter .2s; }
+  :root[data-theme="light"] .cform button[type="submit"] { color: #fff; }
+  .cform button[type="submit"]:hover { transform: translateY(-2px); filter: brightness(1.06); }
+  .cform button[disabled] { opacity: .65; cursor: progress; transform: none; }
+  .cform button svg { width: 18px; height: 18px; fill: currentColor; }
+  .fstatus { min-height: 1.4em; text-align: center; font-size: 15px; color: var(--muted); }
+  .fstatus.ok { color: var(--teal); font-weight: 700; }
+  .fstatus.err { color: var(--pink); }
+  .fstatus a { color: inherit; text-decoration: underline; }
+  .cnote { text-align: center; color: var(--muted); font-size: 14px; margin-top: 18px; }
+  .cnote a { font-weight: 700; }
+  @media (max-width: 640px) { .cform .two { grid-template-columns: minmax(0, 1fr); } .crow { gap: 10px 18px; font-size: 13.5px; } }
+  @media print { .cform { display: none; } }
+
+  /* ===== v5 recommendations ===== */
+  .quotes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; }
+  .qcard { position: relative; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 34px 30px 26px; backdrop-filter: blur(8px); }
+  .qcard::after { content: "\201C"; position: absolute; right: 22px; top: -6px; font-size: 130px; line-height: 1; font-weight: 900; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; opacity: .35; pointer-events: none; }
+  .qcard blockquote { position: relative; color: var(--text); font-size: 16.5px; line-height: 1.7; }
+  .qcard blockquote p + p { margin-top: 14px; }
+  .qcard details.more { margin: 12px 0 0; }
+  .qwho { display: flex; align-items: center; gap: 14px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); position: relative; }
+  .qav { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 17px; color: #07101f; background: var(--grad); flex: none; }
+  .qav { overflow: hidden; }
+  .qav img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .qwho b { display: block; font-size: 16px; }
+  .qwho span { display: block; color: var(--muted); font-size: 14px; line-height: 1.4; }
+  .qtag { margin-left: auto; font-family: var(--mono); font-size: 12px; color: var(--amber); border: 1px solid color-mix(in srgb, var(--amber) 45%, transparent); background: color-mix(in srgb, var(--amber) 10%, transparent); padding: 3px 11px; border-radius: 999px; white-space: nowrap; }
+  .qnote { margin-top: 22px; color: var(--muted); font-size: 14.5px; }
+  @media (max-width: 920px) { .quotes { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 520px) { .qwho { flex-wrap: wrap; } .qtag { margin-left: 60px; } }
 </style>
 </head>
 <body>
@@ -240,7 +379,9 @@
         <li><a class="l" href="#projects">Projects</a></li>
         <li><a class="l" href="#experience">Experience</a></li>
         <li><a class="l" href="#contact">Contact</a></li>
-        <li><a class="r" href="Aminul-Islam-Resume.pdf" download>Resume</a></li>
+        <li><a class="x" href="https://github.com/RD-Aminul" target="_blank" rel="noopener">GitHub &#8599;</a></li>
+        <li><a class="ghost" href="mailto:mdaminulislam2424@gmail.com?subject=Opportunity%20for%20Aminul%20Islam">Contact me</a></li>
+        <li><a class="r" id="resumeLink" href="Aminul-Islam-Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
         <li><button class="theme" id="theme" aria-label="Toggle light and dark theme">&#9680;</button></li>
       </ul>
     </nav>
@@ -255,6 +396,7 @@
       <div class="hero-grid">
         <div>
           <div class="pill"><i></i> Software Developer &middot; Dhaka, Bangladesh</div>
+          <p class="hi">Hi, I&rsquo;m <span class="g">Aminul Islam</span></p>
           <h1>I work on <span class="g">ERP software</span> that runs in production.</h1>
           <p class="type">Building <b id="tw">forms &amp; reports</b><span class="caret" aria-hidden="true"></span></p>
           <p class="lead">3+ years with React.js and ASP.NET Core Web API, shipping features and tools for 20+ production client systems.</p>
@@ -263,18 +405,23 @@
             <a class="btn" href="Aminul-Islam-Resume.pdf" download>Download resume</a>
             <a class="btn" href="https://www.linkedin.com/in/aminulislam-rb/" target="_blank" rel="noopener">LinkedIn</a>
           </div>
+          <div class="info"><span>Dhaka, Bangladesh</span><a href="mailto:mdaminulislam2424@gmail.com?subject=Opportunity%20for%20Aminul%20Islam">Email</a><a href="https://github.com/RD-Aminul" target="_blank" rel="noopener">GitHub</a></div>
         </div>
-        <div class="win" aria-hidden="true">
-          <div class="bar"><i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i><span>aminul.js</span></div>
+        <div class="hero-visual">
+          <div class="portrait">
+            <img src="photo.jpg" alt="Aminul Islam, Software Developer" width="640" height="800" fetchpriority="high">
+            <div class="badge"><b>&gt;</b> 3+ yrs &middot; ERP &amp; APIs</div>
+          </div>
+          <div class="win mini" aria-hidden="true">
+            <div class="bar"><i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i><span>aminul.js</span></div>
 <pre><span class="k">const</span> <span class="n">aminul</span> = {
   role: <span class="s">'Software Developer'</span>,
   stack: [<span class="s">'React.js'</span>,
-          <span class="s">'ASP.NET Core Web API'</span>,
-          <span class="s">'C#'</span>],
+    <span class="s">'ASP.NET Core Web API'</span>,
+    <span class="s">'C#'</span>],
   focus: <span class="s">'ERP &amp; automation'</span>,
-  experience: <span class="s">'3+ years'</span>,
-  location: <span class="s">'Dhaka, Bangladesh'</span>,
 };</pre>
+          </div>
         </div>
       </div>
 
@@ -302,6 +449,7 @@
         <p>I am a Software Developer at <strong>Global Mediklaud (BD) Ltd.</strong>, where I contribute to 20+ ERP modules with <strong>React.js</strong> and <strong>ASP.NET Core Web API</strong>, and deploy ERP releases to 15+ client production environments.</p>
         <p>I also <strong>independently built</strong> the frontend, Android app and backend API of a visitor appointment platform, from requirements to deployment, and created an Electron tool that automates build and packaging for 20+ client systems.</p>
         <p>I have working knowledge of MS SQL Server, PostgreSQL and Oracle, and I use AI tools to move faster while keeping the code readable and maintainable.</p>
+        <div class="fit" style="margin-top:6px"><span class="t">// highlights</span><span class="p">ERP modules</span><span class="p">REST APIs</span><span class="p">Reports</span><span class="p">Deployment automation</span></div>
       </div>
       <ul class="facts">
         <li><span>Role</span><span>Software Developer</span></li>
@@ -313,18 +461,39 @@
     </div>
   </section>
 
+  <section id="focus" style="padding-top:0">
+    <div class="wrap reveal">
+      <div class="label">// what i do</div>
+      <h2>Where I <span class="g">add value</span></h2>
+      <p class="sub">Four areas I work in every day.</p>
+      <div class="focus">
+        <div class="fcard spot"><div class="ic">&lt;/&gt;</div><h3>ERP modules</h3><p>Forms, data entry and CRUD features across 20+ ERP modules, from UI to API with React.js and ASP.NET Core Web API.</p></div>
+        <div class="fcard spot"><div class="ic">&#9636;</div><h3>Reports</h3><p>HTML, Telerik and Crystal reports. 200+ forms and reports delivered across modules and clients.</p></div>
+        <div class="fcard spot"><div class="ic">&#8644;</div><h3>APIs &amp; integrations</h3><p>REST APIs, OTP and token-based access, and online payment gateway integration.</p></div>
+        <div class="fcard spot"><div class="ic">&#9881;</div><h3>Deployment automation</h3><p>An Electron tool that builds and packages releases for 20+ client systems, and IIS deployments to 15+ environments.</p></div>
+      </div>
+    </div>
+  </section>
+
   <section id="skills" style="padding-top:0">
     <div class="wrap reveal">
       <div class="label">// skills</div>
       <h2>What I <span class="g">work with</span></h2>
       <p class="sub">Tools I use day to day on ERP and automation projects.</p>
-      <div class="skills">
-        <div class="skill w3 spot" style="--c:var(--blue)"><h3>Frontend</h3><div class="chips"><span class="chip">React.js</span><span class="chip">JavaScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Bootstrap</span></div></div>
-        <div class="skill w3 spot" style="--c:var(--violet)"><h3>Backend</h3><div class="chips"><span class="chip">ASP.NET Core Web API</span><span class="chip">C#</span><span class="chip">ASP.NET MVC</span><span class="chip">ASP.NET Web Forms</span><span class="chip">REST APIs</span><span class="chip">Payment gateway integration</span></div></div>
-        <div class="skill spot" style="--c:var(--teal)"><h3>Database <small>queries &amp; schema changes</small></h3><div class="chips"><span class="chip">MS SQL Server</span><span class="chip">PostgreSQL</span><span class="chip">Oracle</span></div></div>
-        <div class="skill spot" style="--c:var(--pink)"><h3>Reports</h3><div class="chips"><span class="chip">HTML reports</span><span class="chip">Telerik Reports</span><span class="chip">Crystal Reports</span></div></div>
-        <div class="skill spot" style="--c:var(--amber)"><h3>Desktop &amp; mobile</h3><div class="chips"><span class="chip">Electron</span><span class="chip">React + Capacitor (Android)</span></div></div>
-        <div class="skill w6 spot" style="--c:var(--blue)"><h3>Tools</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">IIS</span><span class="chip">Visual Studio</span><span class="chip">VS Code</span><span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">GitHub Copilot</span><span class="chip">Antigravity</span></div></div>
+      <div class="tabs" role="group" aria-label="Filter skills">
+        <button class="tab" type="button" data-f="all" aria-pressed="true">All</button>
+        <button class="tab" type="button" data-f="frontend" aria-pressed="false">Frontend</button>
+        <button class="tab" type="button" data-f="backend" aria-pressed="false">Backend</button>
+        <button class="tab" type="button" data-f="data" aria-pressed="false">Data &amp; reports</button>
+        <button class="tab" type="button" data-f="tools" aria-pressed="false">Tools &amp; delivery</button>
+      </div>
+      <div class="skills" id="skillGrid">
+        <div class="skill w3 spot" data-cat="frontend" style="--c:var(--blue)"><h3>Frontend</h3><div class="chips"><span class="chip">React.js</span><span class="chip">JavaScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Bootstrap</span></div></div>
+        <div class="skill w3 spot" data-cat="backend" style="--c:var(--violet)"><h3>Backend</h3><div class="chips"><span class="chip">ASP.NET Core Web API</span><span class="chip">C#</span><span class="chip">ASP.NET MVC</span><span class="chip">ASP.NET Web Forms</span><span class="chip">REST APIs</span><span class="chip">Payment gateway integration</span></div></div>
+        <div class="skill spot" data-cat="data" style="--c:var(--teal)"><h3>Database <small>queries &amp; schema changes</small></h3><div class="chips"><span class="chip">MS SQL Server</span><span class="chip">PostgreSQL</span><span class="chip">Oracle</span></div></div>
+        <div class="skill spot" data-cat="data" style="--c:var(--pink)"><h3>Reports</h3><div class="chips"><span class="chip">HTML reports</span><span class="chip">Telerik Reports</span><span class="chip">Crystal Reports</span></div></div>
+        <div class="skill spot" data-cat="tools" style="--c:var(--amber)"><h3>Desktop &amp; mobile</h3><div class="chips"><span class="chip">Electron</span><span class="chip">React + Capacitor (Android)</span></div></div>
+        <div class="skill w6 spot" data-cat="tools" style="--c:var(--blue)"><h3>Tools</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">IIS</span><span class="chip">Visual Studio</span><span class="chip">VS Code</span><span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">GitHub Copilot</span><span class="chip">Antigravity</span></div></div>
       </div>
     </div>
   </section>
@@ -340,6 +509,7 @@
           <div class="no">01</div>
           <div class="proj-top"><h3>Mediklaud Deployment Tool</h3><span class="tag">Personal project</span></div>
           <p class="d">Electron desktop application that automates build and packaging for 20+ client systems, replacing manual build and zip steps with a single tool.</p>
+          <div class="flow" aria-label="Release pipeline"><span class="s">git pull</span><i>&rarr;</i><span class="s">React build</span><i>&rarr;</i><span class="s">dotnet publish</span><i>&rarr;</i><span class="s">IIS site / app pool</span><i>&rarr;</i><span class="s">versioned zip</span></div>
           <details class="more"><summary>Key details</summary><ul>
             <li>Automates the release pipeline: git pull, React build, dotnet publish and IIS site/app-pool handling, packaging output into versioned, timestamped zip artifacts with live progress.</li>
             <li>Builds and zips any client project without opening it in an IDE, with automatic detection of project folders and their current Git branch.</li>
@@ -353,6 +523,7 @@
           <div class="no">02</div>
           <div class="proj-top"><h3>Appointment &amp; Visitor Management System</h3><span class="tag">Office project</span></div>
           <p class="d">Visitor appointment platform with a public portal and an internal admin portal, both backed by one ASP.NET Core Web API with layered architecture. I independently developed the frontend, Android app and backend API.</p>
+          <div class="flow" aria-label="Booking flow"><span class="s">OTP verify</span><i>&rarr;</i><span class="s">Choose facility</span><i>&rarr;</i><span class="s">Visitor details</span><i>&rarr;</i><span class="s">Slot &amp; booth</span><i>&rarr;</i><span class="s">Online payment</span><i>&rarr;</i><span class="s">Appointment slip</span></div>
           <details class="more"><summary>Key details</summary><ul>
             <li><strong>Public portal (React + Capacitor, Android):</strong> 4-step booking flow with OTP-verified mobile registration and token-based access, slot and booth selection, online payment gateway integration and appointment slip.</li>
             <li><strong>Admin portal:</strong> dashboard with appointment and occupancy statistics, check-in/check-out, reports, data sync from client databases, and role-based menu, report and location permissions.</li>
@@ -420,28 +591,90 @@
     </div>
   </section>
 
+  <section id="recs" style="padding-top:0">
+    <div class="wrap reveal">
+      <div class="label">// recommendations</div>
+      <h2>What <span class="g">colleagues say</span></h2>
+      <p class="sub">Two recommendations from LinkedIn, shown here word for word.</p>
+      <div class="quotes">
+
+        <figure class="qcard spot">
+          <blockquote>
+            <p>I have worked with Aminul for over three years, and he is an exceptional colleague and software professional. He combines strong technical skills with a great work ethic and a collaborative attitude. He consistently delivers great results and makes the whole team better. I wholeheartedly recommend him</p>
+          </blockquote>
+          <figcaption class="qwho">
+            <div class="qav"><img src="rajaul-karim.jpg" alt="Rajaul Karim" width="46" height="46" loading="lazy"></div>
+            <div><b>Rajaul Karim</b><span>Full-Stack Software Developer</span></div>
+            <span class="qtag">Same team</span>
+          </figcaption>
+        </figure>
+
+        <figure class="qcard spot">
+          <blockquote>
+            <p>I had the pleasure of mentoring Aminul Islam at Global Mediklaud, where we worked together on our Hospital ERP system. Aminul is a dedicated and enthusiastic software developer with a strong focus on React.js, ASP.NET Core, and ERP module development.</p>
+            <details class="more"><summary>Read full recommendation</summary>
+              <p>He has demonstrated a positive attitude, a willingness to learn, and a collaborative approach to solving technical challenges. His contribution to developing and improving ERP modules, along with his teamwork and commitment to delivering quality solutions, makes him a valuable member of our team.</p>
+              <p>I appreciate his dedication, professionalism, and continuous efforts to grow as a developer. I wish Aminul continued success in his career and future endeavors. I highly recommend him as a capable and promising software developer.</p>
+            </details>
+          </blockquote>
+          <figcaption class="qwho">
+            <div class="qav"><img src="sr-shohan.jpg" alt="S.R. Shohan" width="46" height="46" loading="lazy"></div>
+            <div><b>S.R. Shohan</b><span>Founder at Toolerax</span></div>
+            <span class="qtag">Mentor</span>
+          </figcaption>
+        </figure>
+
+      </div>
+      <p class="qnote">Verify on <a href="https://www.linkedin.com/in/aminulislam-rb/details/recommendations/" target="_blank" rel="noopener">LinkedIn &rarr;</a> (visible to LinkedIn members)</p>
+    </div>
+  </section>
+
   <section id="contact" style="padding-top:0">
     <div class="wrap reveal">
       <div class="cta">
         <div class="blob c1"></div><div class="blob c2"></div>
         <div class="label">// contact</div>
-        <h2>Let&rsquo;s <span class="g">talk</span></h2>
-        <p class="sub">Have a project or an opportunity in mind? Email me or message me on LinkedIn.</p>
-        <a class="mail g" href="mailto:mdaminulislam2424@gmail.com?subject=Opportunity%20for%20Aminul%20Islam">mdaminulislam2424@gmail.com</a>
-        <div class="btns">
-          <a class="btn primary" href="mailto:mdaminulislam2424@gmail.com?subject=Opportunity%20for%20Aminul%20Islam">Send an email</a>
-          <a class="btn" href="https://www.linkedin.com/in/aminulislam-rb/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/RD-Aminul" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="Aminul-Islam-Resume.pdf" download>Resume (PDF)</a>
+        <h2>Get in <span class="g">touch</span></h2>
+        <p class="sub">Have a project or an opportunity in mind? Send me a message and I&rsquo;ll get back to you soon.</p>
+        <div class="crow">
+          <a href="mailto:mdaminulislam2424@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.3.5L12 12.2 19.7 6H4.3z"/></svg>mdaminulislam2424@gmail.com</a>
+          <a href="https://www.linkedin.com/in/aminulislam-rb/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>aminulislam-rb</a>
+          <a href="https://github.com/RD-Aminul" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>RD-Aminul</a>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Dhaka, Bangladesh</span>
         </div>
+        <form class="cform" id="cform" novalidate>
+          <div class="two">
+            <label><span class="vh">Your name</span><input type="text" name="name" placeholder="Your Name" autocomplete="name" required maxlength="80"></label>
+            <label><span class="vh">Your email</span><input type="email" name="email" placeholder="Your Email" autocomplete="email" required maxlength="120"></label>
+          </div>
+          <label><span class="vh">Your message</span><textarea name="message" placeholder="Your Message" required maxlength="3000"></textarea></label>
+          <label class="vh" aria-hidden="true">Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+          <button type="submit" id="csend"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"/></svg><span>Send Message</span></button>
+          <div class="fstatus" id="fstatus" role="status" aria-live="polite"></div>
+        </form>
+        <p class="cnote">Prefer a document? <a href="Aminul-Islam-Resume.pdf" download>Download my resume (PDF)</a>. Messages are sent straight to my email.</p>
+        
       </div>
     </div>
   </section>
 
 </main>
 
+<dialog id="resumeModal" aria-label="Resume preview">
+  <div class="rm-head">
+    <strong>Resume &middot; Aminul Islam</strong>
+    <a class="p" href="Aminul-Islam-Resume.pdf" download>Download</a>
+    <a href="Aminul-Islam-Resume.pdf" target="_blank" rel="noopener">Open in new tab</a>
+    <button type="button" id="rmClose" aria-label="Close preview">Close</button>
+  </div>
+  <iframe id="rmFrame" title="Resume PDF preview" loading="lazy"></iframe>
+</dialog>
+
+<button id="totop" type="button" aria-label="Back to top">&uarr;</button>
+
 <footer>
-  <div class="wrap">&copy; <span id="yr">2026</span> Aminul Islam &middot; Dhaka, Bangladesh</div>
+  <div class="wrap">&copy; <span id="yr">2026</span> Aminul Islam &middot; Dhaka, Bangladesh
+  </div>
 </footer>
 
 <script>
@@ -496,6 +729,83 @@
     if (!reduce) { tw.textContent = ''; tick(); }
 
     window.addEventListener("beforeprint", function () { document.querySelectorAll("details.more").forEach(function (d) { d.open = true; }); });
+
+
+    // scroll-spy: highlight the nav link of the section in view
+    var links = {};
+    document.querySelectorAll('nav a.l').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+    if ('IntersectionObserver' in window) {
+      var spy = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) {
+            Object.keys(links).forEach(function (k) { links[k].classList.remove('active'); });
+            if (links[e.target.id]) links[e.target.id].classList.add('active');
+          }
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      ['about', 'focus', 'skills', 'projects', 'experience', 'contact'].forEach(function (id) { var el = document.getElementById(id); if (el) spy.observe(el); });
+    }
+
+    // back to top
+    var totop = document.getElementById('totop');
+    window.addEventListener('scroll', function () { totop.classList.toggle('show', window.scrollY > 700); }, { passive: true });
+    totop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }); });
+
+    // skills filter
+    var tabs = document.querySelectorAll('.tab'), grid = document.getElementById('skillGrid');
+    tabs.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var f = b.getAttribute('data-f');
+        tabs.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        grid.classList.toggle('filtered', f !== 'all');
+        grid.querySelectorAll('.skill').forEach(function (s) { s.classList.toggle('hide', f !== 'all' && s.getAttribute('data-cat') !== f); });
+      });
+    });
+
+    // resume preview (desktop only; phones open the PDF in a new tab)
+    var modal = document.getElementById('resumeModal'), frame = document.getElementById('rmFrame');
+    var rl = document.getElementById('resumeLink');
+    if (modal && typeof modal.showModal === 'function') {
+      rl.addEventListener('click', function (e) {
+        if (window.innerWidth < 760) return;
+        e.preventDefault();
+        if (!frame.getAttribute('src')) frame.setAttribute('src', 'Aminul-Islam-Resume.pdf#view=FitH');
+        modal.showModal();
+      });
+      document.getElementById('rmClose').addEventListener('click', function () { modal.close(); });
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+    }
+
+
+    // contact form -> FormSubmit (sends to my email); falls back to a mailto link on any error
+    var form = document.getElementById('cform');
+    if (form) {
+      var statusEl = document.getElementById('fstatus'), sendBtn = document.getElementById('csend');
+      var MAIL = 'mdaminulislam2424@gmail.com';
+      function say(msg, cls) { statusEl.className = 'fstatus ' + (cls || ''); statusEl.innerHTML = msg; }
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var d = new FormData(form);
+        var name = (d.get('name') || '').toString().trim(), email = (d.get('email') || '').toString().trim(), message = (d.get('message') || '').toString().trim();
+        if (d.get('_honey')) { return; }
+        if (!name || !message || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { say('Please fill in your name, a valid email and a message.', 'err'); return; }
+        var last = 0; try { last = parseInt(sessionStorage.getItem('lastSend') || '0', 10); } catch (x) {}
+        if (Date.now() - last < 30000) { say('Please wait a few seconds before sending another message.', 'err'); return; }
+        sendBtn.disabled = true; say('Sending...');
+        fetch('https://formsubmit.co/ajax/' + MAIL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ name: name, email: email, message: message, _subject: 'Portfolio message from ' + name, _template: 'table', _captcha: 'false' })
+        }).then(function (r) { return r.json(); }).then(function (j) {
+          if (j && (j.success === 'true' || j.success === true)) {
+            say('Thanks, ' + name.split(' ')[0] + '! Your message has been sent.', 'ok'); form.reset();
+            try { sessionStorage.setItem('lastSend', String(Date.now())); } catch (x) {}
+          } else { throw new Error('rejected'); }
+        }).catch(function () {
+          say('Could not send right now. Please email me directly at <a href="mailto:' + MAIL + '?subject=' + encodeURIComponent('Portfolio message from ' + name) + '&body=' + encodeURIComponent(message) + '">' + MAIL + '</a>.', 'err');
+        }).then(function () { sendBtn.disabled = false; });
+      });
+    }
 
     // spotlight follows the pointer on cards
     document.querySelectorAll('.spot').forEach(function (c) {
