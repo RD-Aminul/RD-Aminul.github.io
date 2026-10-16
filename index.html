@@ -765,7 +765,7 @@
     <a href="Aminul-Islam-Resume.pdf" target="_blank" rel="noopener">Open in new tab</a>
     <button type="button" id="rmClose" aria-label="Close preview">Close</button>
   </div>
-  <iframe id="rmFrame" title="Resume PDF preview" loading="lazy"></iframe>
+  <iframe id="rmFrame" title="Resume PDF preview"></iframe>
 </dialog>
 
 <button id="totop" type="button" aria-label="Back to top">&uarr;</button>
@@ -865,10 +865,11 @@
     var rl = document.getElementById('resumeLink');
     if (modal && typeof modal.showModal === 'function') {
       rl.addEventListener('click', function (e) {
-        if (window.innerWidth < 760) return;
+        // phones and Firefox: open the PDF in a new tab (Firefox shows it in its own viewer)
+        if (window.innerWidth < 760 || /firefox/i.test(navigator.userAgent)) return;
         e.preventDefault();
-        if (!frame.getAttribute('src')) frame.setAttribute('src', 'Aminul-Islam-Resume.pdf#view=FitH');
         modal.showModal();
+        if (!frame.getAttribute('src')) frame.setAttribute('src', 'Aminul-Islam-Resume.pdf#view=FitH');
       });
       document.getElementById('rmClose').addEventListener('click', function () { modal.close(); });
       modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
